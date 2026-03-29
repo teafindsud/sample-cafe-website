@@ -56,7 +56,7 @@ export default function FeatureSection() {
                 initial={{ opacity: 0, y: 24 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.75, ease: [0.16, 1, 0.3, 1] }}
+                transition={{ duration: 0.75, ease: [0.16, 1, 0.3, 1] as [number, number, number, number] }}
             >
                 <span className="font-sans uppercase text-[11px] tracking-[0.28em] block mb-3"
                     style={{ color: "#C8873A" }}>

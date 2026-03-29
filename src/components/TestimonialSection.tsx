@@ -193,7 +193,7 @@ export default function TestimonialSection() {
                         }}
                         transition={{
                             duration: 0.7,
-                            ease: [0.32, 0.72, 0, 1] // Snappy but smooth ease
+                            ease: [0.32, 0.72, 0, 1] as [number, number, number, number] // Snappy but smooth ease
                         }}
                         onAnimationComplete={onAnimationComplete}
                         style={{ width: EXTENDED_TESTIMONIALS.length * stepSize }}
@@ -233,7 +233,7 @@ export default function TestimonialSection() {
                                 <motion.div
                                     key={`${testimonial.id}-${i}`}
                                     animate={{ scale, opacity }}
-                                    transition={{ duration: 0.7, ease: [0.32, 0.72, 0, 1] }}
+                                    transition={{ duration: 0.7, ease: [0.32, 0.72, 0, 1] as [number, number, number, number] }}
                                     style={{
                                         width: cardWidth,
                                         marginRight: gap,

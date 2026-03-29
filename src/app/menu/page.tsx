@@ -272,7 +272,7 @@ function FloatingCategoryButton({ activeId }: { activeId: string }) {
                         initial={{ opacity: 0, y: 16, scale: 0.95 }}
                         animate={{ opacity: 1, y: 0, scale: 1 }}
                         exit={{ opacity: 0, y: 12, scale: 0.97 }}
-                        transition={{ duration: 0.3, ease: [0.25, 0.46, 0.45, 0.94] }}
+                        transition={{ duration: 0.3, ease: [0.25, 0.46, 0.45, 0.94] as [number, number, number, number] }}
                         className="absolute bottom-full left-0 mb-3 w-[240px] bg-[#FDF8F3] border border-[#E8D5C4] rounded-[20px] p-5 shadow-[0_12px_48px_rgba(42,20,16,0.18)]"
                     >
                         <span className="block font-sans text-[10px] uppercase tracking-[0.3em] text-[#5C4A44]/60 mb-3">Jump to</span>

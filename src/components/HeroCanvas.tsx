@@ -149,7 +149,7 @@ function StatItem({ num, label, delay }: { num: string; label: string; delay: nu
       initial={{ opacity: 0, scale: 0.72, y: 18 }}
       whileInView={{ opacity: 1, scale: 1, y: 0 }}
       viewport={{ once: true }}
-      transition={{ duration: 0.65, delay, ease: [0.34, 1.5, 0.64, 1] }}
+      transition={{ duration: 0.65, delay, ease: [0.34, 1.5, 0.64, 1] as [number, number, number, number] }}
     >
       {/* Soft glow behind number */}
       <motion.div
@@ -274,7 +274,7 @@ export default function HeroCanvas() {
           </motion.p>
 
           <motion.h1 initial={{ opacity: 0, y: 28 }} animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
+            transition={{ duration: 0.8, delay: 0.2, ease: [0.16, 1, 0.3, 1] as [number, number, number, number] }}
             className="font-serif mb-3"
             style={{ fontSize: "clamp(2.4rem,11.5vw,3.2rem)", lineHeight: 1.0, color: "#F5ECD8", letterSpacing: "-0.02em" }}>
             <span className="block">Born in <em style={{ fontStyle: "italic", color: "#C84830" }}>fire.</em></span>
@@ -356,7 +356,7 @@ export default function HeroCanvas() {
           </motion.p>
 
           <motion.h1 initial={{ opacity: 0, y: 36 }} animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.85, delay: 0.22, ease: [0.16, 1, 0.3, 1] }}
+            transition={{ duration: 0.85, delay: 0.22, ease: [0.16, 1, 0.3, 1] as [number, number, number, number] }}
             className="font-serif mb-5"
             style={{ fontSize: "clamp(3rem,5.5vw,5.2rem)", lineHeight: 0.96, color: "#F5ECD8", letterSpacing: "-0.02em" }}>
             <span className="block">Born in <em style={{ fontStyle: "italic", color: "#C84830" }}>fire.</em></span>
@@ -368,7 +368,7 @@ export default function HeroCanvas() {
             className="mb-5" style={{ height: 1, background: "rgba(200,135,58,0.45)" }} />
 
           <motion.p initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.75, delay: 0.5, ease: [0.16, 1, 0.3, 1] }}
+            transition={{ duration: 0.75, delay: 0.5, ease: [0.16, 1, 0.3, 1] as [number, number, number, number] }}
             className="font-sans mb-8 leading-relaxed"
             style={{ fontSize: "clamp(0.88rem,1.3vw,1rem)", color: "rgba(245,236,216,0.52)", maxWidth: 400 }}>
             Hand-stretched Neapolitan dough, vine-ripened San Marzano tomatoes, fresh Fior di Latte — finished in our 900°C wood-fired stone oven for 90 seconds of pure perfection.
