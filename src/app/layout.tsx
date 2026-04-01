@@ -30,7 +30,7 @@ export const metadata: Metadata = {
 
   // 👇 YE LINE ADD KI HAI (IMPORTANT)
   verification: {
-    google: "dgcKoS91nGgVlQnMMV26KelmkBT1S_y0e-jT9mDrno0",
+  google: "PZM9Esdohq5fazDk9u5BYxGCxb-RyFtU3wIQlExnZD0",
   },
 
   openGraph: {
