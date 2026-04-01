@@ -27,6 +27,12 @@ export const metadata: Metadata = {
   description:
     "Neapolitan artisan pizzas baked in a 900° wood-fired stone oven. Hand-stretched dough, premium Italian ingredients, three decades of passion.",
   keywords: ["pizza", "artisan pizza", "wood-fired", "Neapolitan pizza", "premium pizza"],
+
+  // 👇 YE LINE ADD KI HAI (IMPORTANT)
+  verification: {
+    google: "dgcKoS91nGgVlQnMMV26KelmkBT1S_y0e-jT9mDrno0",
+  },
+
   openGraph: {
     title: "Pizza Galeria — Crafted with Fire & Soul",
     description:
